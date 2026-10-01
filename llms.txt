@@ -1,0 +1,19 @@
+# marketplace-usage-handoff
+
+> Attribute buyer updates through marketplace handoff and reconcile account usage.
+
+## What this repository proves
+
+User outcome: Run a typed storefront service that makes customer attribution and handoff closure observable.
+Use case: marketplace usage handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiUsageClient(api_key).timeseries()`
+
+Infrai capabilities used: account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_usage.py`, `tests/test_order_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

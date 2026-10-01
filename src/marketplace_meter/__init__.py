@@ -1,0 +1,2 @@
+"""Marketplace usage handoff example."""
+
